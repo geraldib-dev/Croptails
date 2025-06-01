@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=4 uid="uid://dlm83togolg5c"]
+
+[ext_resource type="TileSet" uid="uid://bokcx4u0fnyqx" path="res://Tilesets/house_tile_set.tres" id="1_jp7p4"]
+
+[node name="LargeHouse" type="Node2D"]
+
+[node name="HouseTilemap" type="Node2D" parent="."]
+
+[node name="Floor" type="TileMapLayer" parent="HouseTilemap"]
+tile_map_data = PackedByteArray("AAAGAP7/AAABAAEAAAAFAP7/AAABAAEAAAAEAP7/AAABAAEAAAAEAPz/AAABAAEAAAAFAPz/AAABAAEAAAAGAPz/AAABAAEAAAAGAP3/AAABAAEAAAAFAP3/AAABAAEAAAAEAP3/AAABAAEAAAAEAP//AAABAAEAAAAGAP//AAABAAEAAAAFAP//AAABAAEAAAA=")
+tile_set = ExtResource("1_jp7p4")
+
+[node name="Walls" type="TileMapLayer" parent="HouseTilemap"]
+tile_map_data = PackedByteArray("AAADAPv/AAAAAAAAAAAEAPv/AAABAAAAAAAFAPv/AAABAAAAAAAGAPv/AAADAAIAAAAHAPv/AAACAAAAAAAHAPz/AAACAAEAAAAHAP3/AAACAAEAAAAHAP7/AAACAAEAAAAGAP//AAABAAIAAAAHAP//AAACAAIAAAAEAP//AAADAAIAAAADAP//AAAAAAIAAAADAPz/AAAAAAEAAAADAP3/AAAAAAEAAAADAP7/AAAAAAEAAAAFAP//AwAAAAAAAQA=")
+tile_set = ExtResource("1_jp7p4")
+
+[node name="Furniture" type="TileMapLayer" parent="HouseTilemap"]
+tile_map_data = PackedByteArray("AAAEAPz/AQABAAEAAAAEAPv/AQACAAAAAAAFAPz/AQAEAAEAAAAGAP7/AQADAAAAAAAFAPv/AQAHAAMAAAA=")
+tile_set = ExtResource("1_jp7p4")
