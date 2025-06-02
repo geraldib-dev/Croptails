@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=15 format=3 uid="uid://byuvsefmrwfeq"]
+[gd_resource type="TileSet" load_steps=19 format=3 uid="uid://byuvsefmrwfeq"]
 
 [ext_resource type="Texture2D" uid="uid://c4v3yiqrgeuy0" path="res://assets/game/tilesets/water.png" id="1_m70i2"]
 [ext_resource type="Texture2D" uid="uid://cknc4tp4l8qdf" path="res://assets/game/tilesets/grass.png" id="2_cbdxd"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://oqlqsnooli7u" path="res://assets/game/objects/basic_grass_biom_things.png" id="4_xwv23"]
 [ext_resource type="PackedScene" uid="uid://fui015mjoihn" path="res://scenes/houses/medium_house.tscn" id="6_pi5w0"]
 [ext_resource type="PackedScene" uid="uid://dlm83togolg5c" path="res://scenes/houses/small_house.tscn" id="7_ow828"]
+[ext_resource type="PackedScene" uid="uid://dkrpcmvi2oils" path="res://scenes/objects/trees/small_tree.tscn" id="8_4agr7"]
+[ext_resource type="PackedScene" uid="uid://dpo2vldsfo4i8" path="res://scenes/objects/trees/large_tree.tscn" id="9_mt8is"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cbdxd"]
 texture = ExtResource("1_m70i2")
@@ -485,6 +487,12 @@ scenes/1/scene = ExtResource("6_pi5w0")
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_4agr7"]
 scenes/1/scene = ExtResource("7_ow828")
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_mt8is"]
+scenes/1/scene = ExtResource("8_4agr7")
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_o2x3h"]
+scenes/1/scene = ExtResource("9_mt8is")
+
 [resource]
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "Grass Terrain"
@@ -498,3 +506,5 @@ sources/4 = SubResource("TileSetAtlasSource_0b0mn")
 sources/2 = SubResource("TileSetScenesCollectionSource_pi5w0")
 sources/5 = SubResource("TileSetScenesCollectionSource_ow828")
 sources/6 = SubResource("TileSetScenesCollectionSource_4agr7")
+sources/7 = SubResource("TileSetScenesCollectionSource_mt8is")
+sources/8 = SubResource("TileSetScenesCollectionSource_o2x3h")
