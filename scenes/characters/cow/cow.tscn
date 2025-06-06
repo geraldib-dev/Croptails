@@ -58,6 +58,7 @@ animations = [{
 radius = 6.0
 
 [node name="Cow" type="CharacterBody2D"]
+collision_layer = 64
 script = ExtResource("1_j7g5r")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -72,11 +73,14 @@ position = Vector2(-3, -7)
 shape = SubResource("CircleShape2D_j7g5r")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_desired_distance = 10.0
 navigation_layers = 2
+path_postprocessing = 1
 avoidance_enabled = true
 
-[node name="StateMachine" type="Node" parent="."]
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_node_state")]
 script = ExtResource("2_ilrem")
+initial_node_state = NodePath("Idle")
 
 [node name="Idle" type="Node" parent="StateMachine" node_paths=PackedStringArray("character", "animated_sprite_2d")]
 script = ExtResource("3_j7g5r")
